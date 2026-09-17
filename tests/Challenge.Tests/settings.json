@@ -1,0 +1,9 @@
+{
+  "BaseUrl": "https://automationexercise.com",
+  "Environment": "public-practice",
+  "Browser": "chromium",
+  "Headless": true,
+  "TimeoutMs": 20000,
+  "ApiTimeoutMs": 30000,
+  "RetainFailedAccounts": false
+}

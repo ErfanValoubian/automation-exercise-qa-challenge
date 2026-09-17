@@ -1,0 +1,43 @@
+trigger:
+  branches:
+    include: [main]
+pr:
+  branches:
+    include: [main]
+
+variables:
+  AE_BASE_URL: 'https://automationexercise.com'
+  AE_ENVIRONMENT: 'ci-public'
+  AE_BROWSER: 'chromium'
+  AE_HEADLESS: 'true'
+  AE_RETAIN_FAILED_ACCOUNTS: 'false'
+
+stages:
+  - stage: Build
+    displayName: Restore, build and verify harness
+    jobs:
+      - template: pipelines/test-job.yml
+        parameters:
+          suite: harness
+          browsers: false
+  - stage: ApiSmoke
+    dependsOn: Build
+    jobs:
+      - template: pipelines/test-job.yml
+        parameters:
+          suite: api-smoke
+          browsers: false
+  - stage: UiSmoke
+    dependsOn: ApiSmoke
+    jobs:
+      - template: pipelines/test-job.yml
+        parameters:
+          suite: ui-smoke
+          browsers: true
+  - stage: Regression
+    dependsOn: UiSmoke
+    jobs:
+      - template: pipelines/test-job.yml
+        parameters:
+          suite: regression
+          browsers: true

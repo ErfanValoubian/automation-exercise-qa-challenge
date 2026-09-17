@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+.local-retained/
+.vs/
+*.user
+appsettings.local.json

@@ -1,0 +1,49 @@
+parameters:
+  - name: suite
+    type: string
+  - name: browsers
+    type: boolean
+
+jobs:
+  - job: tests
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+      - checkout: self
+      - task: UseDotNet@2
+        inputs:
+          packageType: sdk
+          version: '8.0.x'
+      - pwsh: |
+          dotnet restore Challenge.sln --configfile NuGet.Config
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet build Challenge.sln -c Release --no-restore
+          exit $LASTEXITCODE
+        displayName: Restore and build on this agent
+      - ${{ if eq(parameters.browsers, true) }}:
+        - pwsh: |
+            ./tests/Challenge.Tests/bin/Release/net8.0/playwright.ps1 install --with-deps chromium
+            exit $LASTEXITCODE
+          displayName: Install browser and OS dependencies on this agent
+      - pwsh: ./scripts/run.ps1 -Suite '${{ parameters.suite }}' -NoBuild -OutputDirectory '$(Build.ArtifactStagingDirectory)/${{ parameters.suite }}'
+        displayName: Test ${{ parameters.suite }}
+        env:
+          AE_BASE_URL: $(AE_BASE_URL)
+          AE_ENVIRONMENT: $(AE_ENVIRONMENT)
+          AE_BROWSER: $(AE_BROWSER)
+          AE_HEADLESS: $(AE_HEADLESS)
+          AE_RETAIN_FAILED_ACCOUNTS: $(AE_RETAIN_FAILED_ACCOUNTS)
+      - task: PublishTestResults@2
+        condition: succeededOrFailed()
+        inputs:
+          testResultsFormat: VSTest
+          searchFolder: '$(Build.ArtifactStagingDirectory)'
+          testResultsFiles: '**/results.trx'
+          failTaskOnFailedTests: true
+          failTaskOnMissingResultsFile: true
+          testRunTitle: '${{ parameters.suite }}'
+      - task: PublishPipelineArtifact@1
+        condition: succeededOrFailed()
+        inputs:
+          targetPath: '$(Build.ArtifactStagingDirectory)'
+          artifact: '${{ parameters.suite }}-reports'
