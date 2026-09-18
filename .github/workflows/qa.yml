@@ -1,0 +1,55 @@
+name: QA validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qa-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validation:
+    name: Build, smoke and regression
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      AE_BASE_URL: https://automationexercise.com
+      AE_ENVIRONMENT: github-actions
+      AE_BROWSER: chromium
+      AE_HEADLESS: 'true'
+      AE_RETAIN_FAILED_ACCOUNTS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore
+        run: dotnet restore Challenge.sln --configfile NuGet.Config
+      - name: Build
+        run: dotnet build Challenge.sln -c Release --no-restore
+      - name: Harness
+        run: ./scripts/run.ps1 -Suite harness -NoBuild -OutputDirectory artifacts/harness
+      - name: API smoke
+        run: ./scripts/run.ps1 -Suite api-smoke -NoBuild -OutputDirectory artifacts/api-smoke
+      - name: Install Chromium
+        run: ./tests/Challenge.Tests/bin/Release/net8.0/playwright.ps1 install --with-deps chromium
+      - name: Browser helper regression
+        run: ./scripts/run.ps1 -Suite browser-harness -NoBuild -OutputDirectory artifacts/browser-harness
+      - name: UI smoke
+        run: ./scripts/run.ps1 -Suite ui-smoke -NoBuild -OutputDirectory artifacts/ui-smoke
+      - name: Regression
+        run: ./scripts/run.ps1 -Suite regression -NoBuild -OutputDirectory artifacts/regression
+      - name: Publish reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-reports
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 14
