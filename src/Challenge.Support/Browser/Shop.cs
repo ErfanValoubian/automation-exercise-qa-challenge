@@ -12,8 +12,9 @@ public sealed record Selection(string Id, string Name, decimal Price);
 public sealed class AccountScreen(IPage page)
 {
     public ILocator LoggedInName => page.Locator("header li").Filter(new() { HasTextString = "Logged in as" }).Locator("b");
-    public ILocator SignInLink => page.GetByRole(AriaRole.Link, new() { Name = "Signup / Login", Exact = true });
-    public ILocator LogoutLink => page.GetByRole(AriaRole.Link, new() { Name = "Logout", Exact = true });
+    // Icon fonts contribute a prefix to the accessible name on this site.
+    public ILocator SignInLink => page.Locator("header").GetByRole(AriaRole.Link, new() { Name = "Signup / Login" });
+    public ILocator LogoutLink => page.Locator("header").GetByRole(AriaRole.Link, new() { NameRegex = new Regex(@"Logout$") });
     public ILocator LoginError => page.GetByText("Your email or password is incorrect!", new() { Exact = true });
     public async Task Login(string email, string password)
     {

@@ -19,7 +19,7 @@ public sealed class BrowserSession(Journal journal) : IAsyncDisposable
             "webkit" => _playwright.Webkit,
             _ => _playwright.Chromium
         };
-        _browser = await type.LaunchAsync(new() { Headless = settings.Headless });
+        _browser = await type.LaunchAsync(new() { Headless = settings.Headless, Channel = settings.BrowserChannel });
         _context = await _browser.NewContextAsync(new()
         {
             BaseURL = settings.BaseUrl, ViewportSize = new() { Width = 1440, Height = 1000 },

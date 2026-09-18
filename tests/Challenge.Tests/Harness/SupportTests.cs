@@ -10,6 +10,15 @@ namespace Challenge.Tests.Harness;
 [TestFixture, Category("harness"), Parallelizable(ParallelScope.All)]
 public sealed class SupportTests : Scenario
 {
+    [SetUp]
+    public void BeginAssertions() => Act();
+
+    [TestCase("arrange", "Executable doesn't exist", "Setup failure; scenario not exercised")]
+    [TestCase("act/assert", "EXPECTED DEMO FAILURE: assertion mismatch", "Intentional diagnostics demonstration")]
+    [TestCase("act/assert", "An unrelated assertion failed", "Business assertion mismatch; product / test triage required")]
+    public void DemoClassification_DoesNotHideSetupOrUnrelatedFailures(string phase, string message, string expected)
+        => Assert.That(OutcomeClassifier.Classify(true, "Failed", phase, true, false, message), Is.EqualTo(expected));
+
     [TestCase("Rs. 500", 500), TestCase("Rs. 1,250.50", 1250.50)]
     public void PriceParser_PreservesNumericValue(string input, decimal expected) => Assert.That(Money.Parse(input), Is.EqualTo(expected));
     [TestCase("Rs. 0.50.20"), TestCase("USD 500"), TestCase("Rs. free")]

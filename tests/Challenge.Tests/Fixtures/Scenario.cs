@@ -65,20 +65,16 @@ public abstract class Scenario
             if (Browser is not null)
                 try { await Browser.DisposeAsync(); }
                 catch (Exception ex) { Log.Add("teardown-warning", "Browser disposal failed", ex.Message); }
-            Api.Dispose();
+            try { await Api.DisposeAsync(); }
+            catch (Exception ex) { Log.Add("teardown-warning", "API context disposal failed", ex.Message); }
             var message = Log.Redactor.Clean((result.Message ?? "") + "\n" + (result.StackTrace ?? ""));
             var categories = GetType().GetCustomAttributes<CategoryAttribute>(true).Select(c => c.Name)
                 .Concat(TestContext.CurrentContext.Test.Properties["Category"].OfType<string>()).Distinct().ToArray();
-            var classification = !failed ? (categories.Contains("observation") ? "Contract observation; product decision pending" : result.Outcome.Status.ToString())
-                : categories.Contains("demo") ? "Intentional diagnostics demonstration"
-                : message.Contains(nameof(ServiceUnavailableException)) ? "Environment / external dependency"
-                : _phase == "arrange" ? "Setup failure; scenario not exercised"
-                : message.Contains(nameof(ContractException)) ? "API contract mismatch; triage required"
-                : message.Contains("Timeout", StringComparison.OrdinalIgnoreCase) ? "Timeout; product / test / environment triage required"
-                : "Business assertion mismatch; product / test triage required";
+            var classification = OutcomeClassifier.Classify(failed, result.Outcome.Status.ToString(), _phase,
+                categories.Contains("demo"), categories.Contains("observation"), message);
             var files = Directory.GetFiles(folder).Select(Path.GetFileName).OfType<string>().ToArray();
             Reports.Write(new TestReport(TestContext.CurrentContext.Test.FullName, result.Outcome.Status.ToString(),
-                classification, Config.Environment, Config.BaseUrl, Browser is null ? "N/A (no browser)" : Config.Browser,
+                classification, Config.Environment, Config.BaseUrl, Browser is null ? "N/A (no browser)" : Config.Browser + (Config.BrowserChannel is null ? "" : "/" + Config.BrowserChannel),
                 Worker, Log.CorrelationId, Log.DurationMs, cleanup, message, "Not retried", categories, Log.Events, files));
             foreach (var file in Directory.GetFiles(folder)) TestContext.AddTestAttachment(file);
             TestContext.Out.WriteLine("Report: " + Path.Combine(Reports.Root, "index.html"));
