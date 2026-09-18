@@ -1,0 +1,111 @@
+{
+  "Name": "Challenge.Tests.Api.AccountTests.WrongPassword_IsRejectedForAnExistingCustomer",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "484763cbd1764e3c85204e94551d4155",
+  "DurationMs": 2847,
+  "Cleanup": "Deleted / confirmed absent",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.AccountTests.WrongPassword_IsRejectedForAnExistingCustomer; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "request",
+      "Message": "POST createAccount",
+      "Detail": "{\u0022name\u0022:\u0022QA 20694a3b5d\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_date\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022firstname\u0022:\u0022QA 20694a3b5d\u0022,\u0022lastname\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022mobile_number\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1558,
+      "Kind": "response",
+      "Message": "HTTP 200; application 201; 1556 ms",
+      "Detail": "{\u0022responseCode\u0022:201,\u0022message\u0022:\u0022User created!\u0022}"
+    },
+    {
+      "ElapsedMs": 1558,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 201.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1558,
+      "Kind": "arrange",
+      "Message": "Created an isolated synthetic customer.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1558,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1558,
+      "Kind": "request",
+      "Message": "POST verifyLogin",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1994,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 436 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022User not found!\u0022}"
+    },
+    {
+      "ElapsedMs": 1994,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1995,
+      "Kind": "request",
+      "Message": "DELETE deleteAccount",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 2414,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 418 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022Account deleted!\u0022}"
+    },
+    {
+      "ElapsedMs": 2414,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2832,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 418 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022Account not found with this email, try another email!\u0022}"
+    },
+    {
+      "ElapsedMs": 2832,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2832,
+      "Kind": "cleanup",
+      "Message": "Deleted / confirmed absent",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

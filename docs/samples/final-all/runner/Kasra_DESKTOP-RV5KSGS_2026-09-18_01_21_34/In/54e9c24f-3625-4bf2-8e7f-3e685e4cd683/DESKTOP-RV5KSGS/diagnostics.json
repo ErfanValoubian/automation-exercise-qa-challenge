@@ -1,0 +1,50 @@
+{
+  "Name": "Challenge.Tests.Api.CatalogueTests.UnsupportedMethod_IsRejectedByApplicationContract(\u0022POST\u0022,\u0022productsList\u0022)",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "a5bf02f38800464bba7f0e402222f939",
+  "DurationMs": 1675,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.CatalogueTests.UnsupportedMethod_IsRejectedByApplicationContract(\u0022POST\u0022,\u0022productsList\u0022); worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "request",
+      "Message": "POST productsList",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1659,
+      "Kind": "response",
+      "Message": "HTTP 200; application 405; 1658 ms",
+      "Detail": "{\u0022responseCode\u0022:405,\u0022message\u0022:\u0022This request method is not supported.\u0022}"
+    },
+    {
+      "ElapsedMs": 1659,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 405.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

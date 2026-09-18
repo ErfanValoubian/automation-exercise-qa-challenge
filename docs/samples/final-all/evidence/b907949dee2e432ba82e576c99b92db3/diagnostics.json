@@ -1,0 +1,298 @@
+{
+  "Name": "Challenge.Tests.Ui.Journeys.Purchase_ApiCustomerSeesCorrectCheckoutAndConfirmedOrder",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "b907949dee2e432ba82e576c99b92db3",
+  "DurationMs": 20383,
+  "Cleanup": "Deleted / confirmed absent",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "ui",
+    "smoke",
+    "hybrid"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Ui.Journeys.Purchase_ApiCustomerSeesCorrectCheckoutAndConfirmedOrder; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2,
+      "Kind": "request",
+      "Message": "POST createAccount",
+      "Detail": "{\u0022name\u0022:\u0022QA 78dd540565\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_date\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022firstname\u0022:\u0022QA 78dd540565\u0022,\u0022lastname\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022mobile_number\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 2047,
+      "Kind": "response",
+      "Message": "HTTP 200; application 201; 2045 ms",
+      "Detail": "{\u0022responseCode\u0022:201,\u0022message\u0022:\u0022User created!\u0022}"
+    },
+    {
+      "ElapsedMs": 2047,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 201.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2047,
+      "Kind": "arrange",
+      "Message": "Created an isolated synthetic customer.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3090,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3091,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 5838,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 5838,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 5838,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 8714,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 8714,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 8715,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 8958,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9801,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9801,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9802,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11438,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=dress\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11439,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=dress\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11439,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=dress\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12594,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13778,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13778,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13778,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14527,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/checkout\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14527,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/checkout\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14527,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/checkout\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14680,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 15465,
+      "Kind": "browser-console",
+      "Message": "Refused to apply style from \u0027https://automationexercise.com/static/css/cart_checkout.css\u0027 because its MIME type (\u0027text/html\u0027) is not a supported stylesheet MIME type, and strict MIME checking is enabled.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 15897,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 15898,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 15898,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 16444,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 17873,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment_done/1000\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 17874,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment_done/1000\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 17874,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/payment_done/1000\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 17941,
+      "Kind": "business",
+      "Message": "UI confirmed purchase of product 3 for 1000. Order persistence cannot be checked through the published API.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 17941,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 18336,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 18844,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 902 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022user\u0022:{\u0022id\u0022:2840550,\u0022name\u0022:\u0022QA 78dd540565\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_day\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022first_name\u0022:\u0022QA 78dd540565\u0022,\u0022last_name\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022}}"
+    },
+    {
+      "ElapsedMs": 18844,
+      "Kind": "request",
+      "Message": "DELETE deleteAccount",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 19311,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 466 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022Account deleted!\u0022}"
+    },
+    {
+      "ElapsedMs": 19311,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 20080,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 768 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022Account not found with this email, try another email!\u0022}"
+    },
+    {
+      "ElapsedMs": 20080,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 20080,
+      "Kind": "cleanup",
+      "Message": "Deleted / confirmed absent",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

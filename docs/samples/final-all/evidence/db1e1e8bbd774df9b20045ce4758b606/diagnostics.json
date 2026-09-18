@@ -1,0 +1,32 @@
+{
+  "Name": "Challenge.Tests.Harness.SupportTests.ProductContract_CannotPassOnHtmlOrMissingCollection(\u0022{\\\u0022responseCode\\\u0022:200,\\\u0022products\\\u0022:null}\u0022)",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "db1e1e8bbd774df9b20045ce4758b606",
+  "DurationMs": 1,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.SupportTests.ProductContract_CannotPassOnHtmlOrMissingCollection(\u0022{\\\u0022responseCode\\\u0022:200,\\\u0022products\\\u0022:null}\u0022); worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

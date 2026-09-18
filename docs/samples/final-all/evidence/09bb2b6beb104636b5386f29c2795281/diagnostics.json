@@ -1,0 +1,183 @@
+{
+  "Name": "Challenge.Tests.Ui.Journeys.AccountAccess_LoginAndLogoutChangeTheSession",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "09bb2b6beb104636b5386f29c2795281",
+  "DurationMs": 15272,
+  "Cleanup": "Deleted / confirmed absent",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "ui",
+    "smoke"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Ui.Journeys.AccountAccess_LoginAndLogoutChangeTheSession; worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "request",
+      "Message": "POST createAccount",
+      "Detail": "{\u0022name\u0022:\u0022QA 33522e8bfd\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_date\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022firstname\u0022:\u0022QA 33522e8bfd\u0022,\u0022lastname\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022mobile_number\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1787,
+      "Kind": "response",
+      "Message": "HTTP 200; application 201; 1786 ms",
+      "Detail": "{\u0022responseCode\u0022:201,\u0022message\u0022:\u0022User created!\u0022}"
+    },
+    {
+      "ElapsedMs": 1787,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 201.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1787,
+      "Kind": "arrange",
+      "Message": "Created an isolated synthetic customer.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4474,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4474,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 6504,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 6504,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 6504,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11205,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11205,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11205,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11253,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12695,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12695,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12696,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13490,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13491,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13491,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 13558,
+      "Kind": "request",
+      "Message": "DELETE deleteAccount",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 13682,
+      "Kind": "browser-console",
+      "Message": "Failed to load resource: net::ERR_CONNECTION_CLOSED",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14453,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 894 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022Account deleted!\u0022}"
+    },
+    {
+      "ElapsedMs": 14453,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14873,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 419 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022Account not found with this email, try another email!\u0022}"
+    },
+    {
+      "ElapsedMs": 14873,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 14873,
+      "Kind": "cleanup",
+      "Message": "Deleted / confirmed absent",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

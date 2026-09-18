@@ -1,0 +1,32 @@
+{
+  "Name": "Challenge.Tests.Harness.SupportTests.DemoClassification_DoesNotHideSetupOrUnrelatedFailures(\u0022act/assert\u0022,\u0022EXPECTED DEMO FAILURE: assertion mismatch\u0022,\u0022Intentional diagnostics demonstration\u0022)",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "38b50c341ecf4c57be79c6dac6a613f8",
+  "DurationMs": 1,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.SupportTests.DemoClassification_DoesNotHideSetupOrUnrelatedFailures(\u0022act/assert\u0022,\u0022EXPECTED DEMO FAILURE: assertion mismatch\u0022,\u0022Intentional diagnostics demonstration\u0022); worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

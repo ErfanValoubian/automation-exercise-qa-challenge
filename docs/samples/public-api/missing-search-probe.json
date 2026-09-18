@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-17T21:31:30.322Z",
+  "method": "POST",
+  "url": "https://automationexercise.com/api/searchProduct",
+  "httpStatus": 200,
+  "body": "{\"responseCode\": 400, \"message\": \"Bad request, search_product parameter is missing in POST request.\"}"
+}

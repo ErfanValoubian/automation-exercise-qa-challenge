@@ -1,0 +1,48 @@
+{
+  "Name": "Challenge.Tests.Ui.EvidenceDemo.IntentionalFailure_CapturesBrowserEvidence",
+  "Outcome": "Failed",
+  "Classification": "Intentional diagnostics demonstration",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "NonParallelWorker",
+  "CorrelationId": "6cf23c635bde4e58a9e47604724f7266",
+  "DurationMs": 1891,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "  EXPECTED DEMO FAILURE: verify screenshot, trace, JSON and HTML attachments.\nAssert.That(await page.TitleAsync(), Is.EqualTo(\u0022Intentionally incorrect title\u0022))\r\n  Expected string length 29 but was 25. Strings differ at index 0.\r\n  Expected: \u0022Intentionally incorrect title\u0022\r\n  But was:  \u0022Diagnostics demonstration\u0022\r\n  -----------^\r\n\n   at Challenge.Tests.Ui.EvidenceDemo.IntentionalFailure_CapturesBrowserEvidence() in C:\\Users\\Kasra\\Documents\\Codex\\2026-09-18\\fv\\work\\ae-fresh\\tests\\Challenge.Tests\\Ui\\EvidenceDemo.cs:line 16\r\n   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter\u00601.BlockUntilCompleted()\r\n   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)\r\n   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](Func\u00601 invoke)\r\n   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func\u00601 invoke)\r\n   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)\r\n   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)\r\n   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.\u003C\u003Ec__DisplayClass1_0.\u003CExecute\u003Eb__0()\r\n   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)\r\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "demo"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 1,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Ui.EvidenceDemo.IntentionalFailure_CapturesBrowserEvidence; worker=NonParallelWorker",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1337,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1373,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1653,
+      "Kind": "browser",
+      "Message": "Failure page URL",
+      "Detail": "about:blank"
+    }
+  ],
+  "Files": [
+    "failure-dom.html",
+    "failure.png",
+    "trace.zip"
+  ]
+}

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7b56a73b-b953-4115-8c80-9f52bb78a44c" name="Kasra@DESKTOP-RV5KSGS 2026-09-18 09:18:14" runUser="DESKTOP-RV5KSGS\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-18T09:18:14.3280233+03:30" queuing="2026-09-18T09:18:14.3280235+03:30" start="2026-09-18T09:18:13.6644264+03:30" finish="2026-09-18T09:18:14.3363971+03:30" />
+  <TestSettings name="default" id="9dfd82a6-7b84-4f8f-bf0a-d323d1641077">
+    <Deployment runDeploymentRoot="Kasra_DESKTOP-RV5KSGS_2026-09-18_09_18_14" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="60c44fdb-2991-46f5-85b3-10a686bd8c17" testId="497fbb8a-0085-9115-03bb-51714228409c" testName="IntentionalFailure_ProducesPortableDiagnostics" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0609630" startTime="2026-09-18T09:18:14.1366512+03:30" endTime="2026-09-18T09:18:14.1975683+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60c44fdb-2991-46f5-85b3-10a686bd8c17">
+      <Output>
+        <StdOut>Correlation: 95edb92a8121453483aa7a34d4d8d7d3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\artifacts\verified-report-demo\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+        <ErrorInfo>
+          <Message>  EXPECTED DEMO FAILURE: offline report plumbing demonstration.&#xD;
+Assert.That(2 + 2, Is.EqualTo(5))&#xD;
+  Expected: 5&#xD;
+  But was:  4&#xD;
+</Message>
+          <StackTrace>   at Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics() in C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\tests\Challenge.Tests\Harness\ReportingDemo.cs:line 14&#xD;
+
+1)    at Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics() in C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\tests\Challenge.Tests\Harness\ReportingDemo.cs:line 14&#xD;
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="IntentionalFailure_ProducesPortableDiagnostics" storage="c:\users\kasra\documents\codex\2026-09-18\fv\work\ae-fresh\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="497fbb8a-0085-9115-03bb-51714228409c">
+      <Execution id="60c44fdb-2991-46f5-85b3-10a686bd8c17" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.ReportingDemo" name="IntentionalFailure_ProducesPortableDiagnostics" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="497fbb8a-0085-9115-03bb-51714228409c" executionId="60c44fdb-2991-46f5-85b3-10a686bd8c17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll&#xD;
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Explicit run&#xD;
+Correlation: 95edb92a8121453483aa7a34d4d8d7d3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\work\ae-fresh\artifacts\verified-report-demo\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

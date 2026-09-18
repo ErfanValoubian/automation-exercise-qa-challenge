@@ -1,0 +1,32 @@
+{
+  "Name": "Challenge.Tests.Harness.SupportTests.DemoClassification_DoesNotHideSetupOrUnrelatedFailures(\u0022arrange\u0022,\u0022Executable doesn\u0027t exist\u0022,\u0022Setup failure; scenario not exercised\u0022)",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "72dfe97377ef4bf6bf1eb2a7067a6c27",
+  "DurationMs": 0,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.SupportTests.DemoClassification_DoesNotHideSetupOrUnrelatedFailures(\u0022arrange\u0022,\u0022Executable doesn\u0027t exist\u0022,\u0022Setup failure; scenario not exercised\u0022); worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

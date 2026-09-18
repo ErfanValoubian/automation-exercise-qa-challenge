@@ -1,0 +1,51 @@
+{
+  "Name": "Challenge.Tests.Api.AccountTests.UnknownCustomer_CannotAuthenticate",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "056ce3b811c14fad8cfa1c3fafe5eca6",
+  "DurationMs": 1741,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.AccountTests.UnknownCustomer_CannotAuthenticate; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "request",
+      "Message": "POST verifyLogin",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1725,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 1724 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022User not found!\u0022}"
+    },
+    {
+      "ElapsedMs": 1725,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

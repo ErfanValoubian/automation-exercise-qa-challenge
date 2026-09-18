@@ -1,0 +1,38 @@
+{
+  "Name": "Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics",
+  "Outcome": "Failed",
+  "Classification": "Intentional diagnostics demonstration",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "NonParallelWorker",
+  "CorrelationId": "95edb92a8121453483aa7a34d4d8d7d3",
+  "DurationMs": 25,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "  EXPECTED DEMO FAILURE: offline report plumbing demonstration.\nAssert.That(2 \u002B 2, Is.EqualTo(5))\r\n  Expected: 5\r\n  But was:  4\r\n\n   at Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics() in C:\\Users\\Kasra\\Documents\\Codex\\2026-09-18\\fv\\work\\ae-fresh\\tests\\Challenge.Tests\\Harness\\ReportingDemo.cs:line 14\r\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "demo"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 1,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics; worker=NonParallelWorker",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3,
+      "Kind": "diagnostic-demo",
+      "Message": "No network, account or application used; verifying assertion evidence and reporting only.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}
