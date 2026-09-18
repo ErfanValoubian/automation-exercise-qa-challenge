@@ -1,5 +1,5 @@
 param(
-    [ValidateSet('all','api','ui','hybrid','api-smoke','ui-smoke','regression','harness','observations','demo','report-demo')]
+    [ValidateSet('all','api','ui','hybrid','api-smoke','ui-smoke','regression','harness','browser-harness','observations','demo','report-demo')]
     [string]$Suite = 'all',
     [ValidateSet('Debug','Release')][string]$Configuration = 'Release',
     [switch]$NoBuild,
@@ -16,6 +16,7 @@ $filters = @{
     'ui-smoke' = 'TestCategory=ui&TestCategory=smoke'
     regression = 'TestCategory=regression'
     harness = 'TestCategory=harness'
+    'browser-harness' = 'TestCategory=browser-harness'
     observations = 'TestCategory=observation'
     demo = 'FullyQualifiedName=Challenge.Tests.Ui.EvidenceDemo.IntentionalFailure_CapturesBrowserEvidence'
     'report-demo' = 'FullyQualifiedName=Challenge.Tests.Harness.ReportingDemo.IntentionalFailure_ProducesPortableDiagnostics'

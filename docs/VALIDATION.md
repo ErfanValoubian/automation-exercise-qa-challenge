@@ -54,3 +54,11 @@ Alternatively, install the default bundled Chromium and unset `AE_BROWSER_CHANNE
 - An initial HttpClient prototype could not use the sandbox's Windows TLS stack. The final supported APIRequestContext transport verifies TLS and passed all API tests. No TLS bypass is present.
 
 The package includes an offline Git bundle containing actual implementation and verification commits. To preserve that history, run `git clone repository.bundle qa-automation` from the extracted package directory. The ZIP source and the bundle's main branch correspond to the same final commit.
+
+## Consent-overlay correction (2026-09-18)
+
+A subsequent user run passed 27/28 main tests: the purchase click was blocked by the site's Funding Choices consent overlay. BrowserSession now registers a Playwright locator handler before navigation. When that overlay appears, it opens Manage options and confirms existing choices through the visible preferences panel, then resumes the original action.
+
+Validation after this correction: Release build succeeded with zero warnings/errors; all 3 new browser-harness checks passed; all 4 public-site UI scenarios passed using Microsoft Edge. The live rerun did not show the consent overlay, so the timing behaviour is covered by separate local browser fixtures, not claimed as a live CMP validation. All 3 accounts from the UI rerun were deleted and confirmed absent. The original 28-test sample above predates this correction; the full main suite was not rerun for this patch.
+
+Run the focused helper checks with `./scripts/run.ps1 -Suite browser-harness`. They are separate from the 28-test `all` suite and require an installed browser. The user's separate NuGet restore collision was not reproduced or diagnosed by this change.

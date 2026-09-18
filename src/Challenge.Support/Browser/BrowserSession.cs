@@ -30,6 +30,7 @@ public sealed class BrowserSession(Journal journal) : IAsyncDisposable
         // Trace is powerful, but raw: ONLY disposable, synthetic credentials are used in this suite.
         await _context.Tracing.StartAsync(new() { Screenshots = true, Snapshots = true, Sources = false });
         Page = await _context.NewPageAsync();
+        await ConsentDialog.Register(Page, journal);
         Page.PageError += (_, error) => journal.Add("browser-error", error);
         Page.Console += (_, msg) => { if (msg.Type == "error") journal.Add("browser-console", msg.Text); };
         journal.Add("browser", $"Isolated {settings.Browser} context started.");
