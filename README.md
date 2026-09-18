@@ -4,7 +4,7 @@
 
 A fresh C#/.NET 8 test suite for the public [Automation Exercise](https://automationexercise.com) application. Only test automation is implemented. The logistics extension is a written design.
 
-**Latest verified local execution: 28 passed, 0 failed, 0 skipped.** The suite covers API contracts, customer lifecycle, browser journeys and an API-assisted checkout. See the [validation ledger](docs/VALIDATION.md) and [execution report](docs/samples/verified-all/evidence/index.html). Hosted CI validation is pending.
+**Latest verified local execution: 28 passed, 0 failed, 0 skipped.** The suite covers API contracts, customer lifecycle, browser journeys and an API-assisted checkout. See the [validation ledger](docs/VALIDATION.md) and [execution report](docs/samples/verified-all/evidence/index.html). **Hosted CI: [passed](https://github.com/ErfanValoubian/automation-exercise-qa-challenge/actions/runs/35316671288)** on Ubuntu 24.04 with Chromium.
 
 ## Run on Windows
 
@@ -143,9 +143,13 @@ Unset that variable for the default bundled browser. The supplied final browser 
 
 ## CI and submission
 
-Create an Azure pipeline using `azure-pipelines.yml`. Jobs run harness → API smoke → UI smoke → regression. Each job restores/builds on its own agent; UI jobs also install the browser. Nonzero test exit codes fail the job. Reports publish on success and failure. Hosted branch-policy validation may need configuring in Azure Repos; the YAML `pr` trigger alone does not create that policy.
+GitHub Actions is the active hosted pipeline: [QA validation](https://github.com/ErfanValoubian/automation-exercise-qa-challenge/actions/workflows/qa.yml). The first hosted run [completed successfully](https://github.com/ErfanValoubian/automation-exercise-qa-challenge/actions/runs/35316671288) on 2026-09-18, testing commit `a1d59d054018b18c7d110b66ab83d88b5c9b649e` on Ubuntu 24.04 with bundled Chromium. Total duration: 1 minute 36 seconds.
 
-The sample local runs do not claim that a hosted pipeline passed. A repository URL and successful CI run are account-specific final submission steps. Commit this source and real sample evidence to your repository, identify your reviewed commit, and add the pipeline run URL after executing it. Submitted by Erfan Valoubian. AI-assisted implementation details are documented in the engineering note.
+The workflow restores and builds, then gates Harness → API Smoke → Browser Helper Regression → UI Smoke → Regression. Failures stop subsequent test stages; artifact publishing runs even after a failure. The successful run published the `qa-reports` artifact (HTML, TRX and per-test diagnostics). Download it from the run's **Artifacts** section and open each suite's `evidence/index.html`. Artifacts are retained for 14 days; checked-in local samples remain available under `docs/samples`.
+
+To run CI manually, open **Actions → QA validation → Run workflow → main → Run workflow**. Pushes and pull requests to main also trigger it. No real account credentials or repository secrets are needed. The exact commands are in [.github/workflows/qa.yml](.github/workflows/qa.yml).
+
+The original Azure pipeline definition remains available in `azure-pipelines.yml`. Azure execution was not performed because organization creation required an Azure subscription unavailable to this account. GitHub Actions is an accepted alternative in the assessment. Earlier validation notes describe local verification before this hosted run; this section records the subsequent hosted result. Submitted by Erfan Valoubian; AI assistance is documented in the engineering note.
 
 ## Troubleshooting
 
