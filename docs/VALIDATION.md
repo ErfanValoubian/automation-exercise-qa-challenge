@@ -59,6 +59,20 @@ The package includes an offline Git bundle containing actual implementation and 
 
 A subsequent user run passed 27/28 main tests: the purchase click was blocked by the site's Funding Choices consent overlay. BrowserSession now registers a Playwright locator handler before navigation. When that overlay appears, it opens Manage options and confirms existing choices through the visible preferences panel, then resumes the original action.
 
-Validation after this correction: Release build succeeded with zero warnings/errors; all 3 new browser-harness checks passed; all 4 public-site UI scenarios passed using Microsoft Edge. The live rerun did not show the consent overlay, so the timing behaviour is covered by separate local browser fixtures, not claimed as a live CMP validation. All 3 accounts from the UI rerun were deleted and confirmed absent. The original 28-test sample above predates this correction; the full main suite was not rerun for this patch.
+Validation after this correction: Release build succeeded with zero warnings/errors; all 3 new browser-harness checks passed; all 4 public-site UI scenarios passed using Microsoft Edge. The live rerun did not show the consent overlay, so the timing behaviour is covered by separate local browser fixtures, not claimed as a live CMP validation. All 3 accounts from the UI rerun were deleted and confirmed absent. The original 28-test sample above predates this correction. The subsequent full local run, recorded below, verifies all 28 main tests after the correction.
 
 Run the focused helper checks with `./scripts/run.ps1 -Suite browser-harness`. They are separate from the 28-test `all` suite and require an installed browser. The user's separate NuGet restore collision was not reproduced or diagnosed by this change.
+
+## Latest full verification after the consent correction
+
+The user executed the updated source locally on 2026-09-18. Run identifier: `20260918-094606-all-bdbb72`; source revision: `a85a72d` (subsequent publication preparation changes documentation and packaged evidence).
+
+| Check | Verified result |
+|---|---|
+| Release build | Succeeded; 0 warnings, 0 errors |
+| Main suite | 28 passed, 0 failed, 0 skipped; reported duration 44 seconds |
+| Account cleanup | 7 deleted and confirmed absent; 21 tests required no cleanup |
+| Consent helper regression | Separate execution: 3 passed, 0 failed |
+| Hosted CI | Not yet executed |
+
+Evidence: [latest main HTML](samples/verified-all/evidence/index.html), [latest main TRX](samples/verified-all/runner/results.trx), [consent regression HTML](samples/consent-regression/evidence/index.html). The full run was provided by the user and checked against its local diagnostic files. It is not represented as an independently hosted pipeline run. Build used `--no-restore`; this result does not resolve the previously reported NuGet restore collision.

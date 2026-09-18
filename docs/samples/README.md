@@ -1,10 +1,12 @@
 # Actual execution samples
 
-Open [the final main report](final-all/evidence/index.html) first: **28 passed, 0 failed**.
+Open [the latest verified main report](verified-all/evidence/index.html) first: **28 passed, 0 failed**, after the consent-overlay correction.
 
 | Folder | Meaning |
 |---|---|
-| `final-all/` | Final API + UI/hybrid + harness run, real public application, Edge Chromium, two workers |
+| `verified-all/` | Latest full local execution after consent handling was corrected; 28 passed |
+| `consent-regression/` | Three isolated browser checks for unexpected consent-overlay timing; all passed |
+| `final-all/` | Original API + UI/hybrid + harness run, real public application, Edge Chromium, two workers |
 | `observations/` | Separate empty-input contract observation; passing does not mean a product-policy decision |
 | `browser-demo/` | Deliberately failing local-page browser test; PNG, trace, DOM, JSON and HTML exist |
 | `final-report-demo/` | Deliberately failing offline assertion; tests report plumbing without a browser |

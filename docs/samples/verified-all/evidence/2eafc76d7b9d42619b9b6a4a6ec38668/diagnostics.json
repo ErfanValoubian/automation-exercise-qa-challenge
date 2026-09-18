@@ -1,0 +1,93 @@
+{
+  "Name": "Challenge.Tests.Ui.Journeys.SearchAndCart_TwoProductsKeepTheirPricesAndRemovalIsSelective",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "2eafc76d7b9d42619b9b6a4a6ec38668",
+  "DurationMs": 10748,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "ui",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Ui.Journeys.SearchAndCart_TwoProductsKeepTheirPricesAndRemovalIsSelective; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 795,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 795,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2383,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2384,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2384,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4952,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=top\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4952,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=top\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4952,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/products?search=top\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9242,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9243,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9244,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/view_cart\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

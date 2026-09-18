@@ -1,14 +1,16 @@
-# Automation Exercise — QA engineering submission
+# Automation Exercise QA Challenge
+
+**Author:** [Erfan Valoubian](https://github.com/ErfanValoubian)
 
 A fresh C#/.NET 8 test suite for the public [Automation Exercise](https://automationexercise.com) application. Only test automation is implemented. The logistics extension is a written design.
 
-**Start with [VALIDATION.md](docs/VALIDATION.md): implemented coverage and verified execution are deliberately reported separately.** The supplied samples are actual executions, not fabricated green reports.
+**Latest verified local execution: 28 passed, 0 failed, 0 skipped.** The suite covers API contracts, customer lifecycle, browser journeys and an API-assisted checkout. See the [validation ledger](docs/VALIDATION.md) and [execution report](docs/samples/verified-all/evidence/index.html). Hosted CI validation is pending.
 
 ## Run on Windows
 
 Requirements: .NET SDK 8.0.4xx (8.0.425 was used here), Windows PowerShell 5.1 or PowerShell 7, and HTTPS access to NuGet, Playwright's browser CDN and the public application. Other .NET 8 feature bands require an intentional `global.json` change.
 
-Open PowerShell in this extracted directory:
+Open PowerShell in the repository root (the folder containing `Challenge.sln`):
 
 ```powershell
 dotnet restore Challenge.sln --configfile NuGet.Config
@@ -31,10 +33,11 @@ The runner script builds unless `-NoBuild` is supplied. It always enables TRX an
 ./scripts/run.ps1 -Suite ui-smoke
 ./scripts/run.ps1 -Suite regression
 ./scripts/run.ps1 -Suite harness
+./scripts/run.ps1 -Suite browser-harness
 ./scripts/run.ps1 -Suite observations
 ```
 
-`all` means API + UI + harness. Contract observations and intentional failures are separate. The hybrid purchase is also a UI smoke test. Smoke and regression tags are mutually exclusive here.
+`all` contains 28 tests: 11 API, 4 UI and 13 harness checks. The three `browser-harness` checks cover consent-overlay handling separately. Contract observations and intentional failures are separate. The hybrid purchase is also a UI smoke test. Smoke and regression tags are mutually exclusive here.
 
 To use the underlying runner directly:
 
@@ -142,7 +145,7 @@ Unset that variable for the default bundled browser. The supplied final browser 
 
 Create an Azure pipeline using `azure-pipelines.yml`. Jobs run harness → API smoke → UI smoke → regression. Each job restores/builds on its own agent; UI jobs also install the browser. Nonzero test exit codes fail the job. Reports publish on success and failure. Hosted branch-policy validation may need configuring in Azure Repos; the YAML `pr` trigger alone does not create that policy.
 
-The sample local runs do not claim that a hosted pipeline passed. A repository URL and successful CI run are account-specific final submission steps. Commit this source and real sample evidence to your repository, identify your reviewed commit, and add the pipeline run URL after executing it. Candidate identity has not been invented.
+The sample local runs do not claim that a hosted pipeline passed. A repository URL and successful CI run are account-specific final submission steps. Commit this source and real sample evidence to your repository, identify your reviewed commit, and add the pipeline run URL after executing it. Submitted by Erfan Valoubian. AI-assisted implementation details are documented in the engineering note.
 
 ## Troubleshooting
 
@@ -166,4 +169,4 @@ Raw browser traces and screenshots can contain synthetic form values. Custom red
 - [Evidence-based quality risks](docs/QUALITY_REPORTS.md)
 - [AI engineering note](docs/AI_ENGINEERING_NOTE.md)
 - [Execution validation and limitations](docs/VALIDATION.md)
-- [Persian quick start](README.fa.md)
+- [Repository handoff](docs/REPOSITORY_HANDOFF.md)

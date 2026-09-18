@@ -6,3 +6,9 @@ TestResults/
 .vs/
 *.user
 appsettings.local.json
+
+# Local distribution files
+repository.bundle
+PACKAGE-INFO.txt
+*.zip
+!docs/samples/**/trace.zip

@@ -1,0 +1,32 @@
+{
+  "Name": "Challenge.Tests.Harness.SupportTests.Redaction_CoversNestedFieldsAndRegisteredSecrets",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "be70308c423a42e4990842db8db70621",
+  "DurationMs": 1,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.SupportTests.Redaction_CoversNestedFieldsAndRegisteredSecrets; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

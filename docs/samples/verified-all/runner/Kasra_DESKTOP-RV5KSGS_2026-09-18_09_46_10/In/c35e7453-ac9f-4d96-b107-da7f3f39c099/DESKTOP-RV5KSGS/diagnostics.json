@@ -1,0 +1,45 @@
+{
+  "Name": "Challenge.Tests.Api.CatalogueTests.Search_ReturnsOnlyRelevantProducts",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "35443ea4f86a49ce84bf205999a13c17",
+  "DurationMs": 1324,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "smoke"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.CatalogueTests.Search_ReturnsOnlyRelevantProducts; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "request",
+      "Message": "POST searchProduct",
+      "Detail": "{\u0022search_product\u0022:\u0022top\u0022}"
+    },
+    {
+      "ElapsedMs": 1309,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 1308 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022products\u0022:[{\u0022id\u0022:1,\u0022name\u0022:\u0022Blue Top\u0022,\u0022price\u0022:\u0022Rs. 500\u0022,\u0022brand\u0022:\u0022Polo\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}},{\u0022id\u0022:5,\u0022name\u0022:\u0022Winter Top\u0022,\u0022price\u0022:\u0022Rs. 600\u0022,\u0022brand\u0022:\u0022Mast \\u0026 Harbour\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}},{\u0022id\u0022:6,\u0022name\u0022:\u0022Summer White Top\u0022,\u0022price\u0022:\u0022Rs. 400\u0022,\u0022brand\u0022:\u0022H\\u0026M\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}},{\u0022id\u0022:7,\u0022name\u0022:\u0022Madame Top For Women\u0022,\u0022price\u0022:\u0022Rs. 1000\u0022,\u0022brand\u0022:\u0022Madame\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}},{\u0022id\u0022:8,\u0022name\u0022:\u0022Fancy Green Top\u0022,\u0022price\u0022:\u0022Rs. 700\u0022,\u0022brand\u0022:\u0022Polo\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}},{\u0022id\u0022:11,\u0022name\u0022:\u0022Sleeves Printed Top - White\u0022,\u0022price\u0022:\u0022Rs. 499\u0022,\u0022brand\u0022:\u0022Babyhug\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:12,\u0022name\u0022:\u0022Half Sleeves Top Schiffli Detailing - Pink\u0022,\u0022price\u0022:\u0022Rs. 359\u0022,\u0022brand\u0022:\u0022Babyhug\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:13,\u0022name\u0022:\u0022Frozen Tops For Kids\u0022,\u0022price\u0022:\u0022Rs. 278\u0022,\u0022brand\u0022:\u0022Allen Solly Junior\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:14,\u0022name\u0022:\u0022Full Sleeves Top Cherry - Pink\u0022,\u0022price\u0022:\u0022Rs. 679\u0022,\u0022brand\u0022:\u0022Kookie Kids\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:15,\u0022name\u0022:\u0022Printed Off Shoulder Top - White\u0022,\u0022price\u0022:\u0022Rs. 315\u0022,\u0022brand\u0022:\u0022Babyhug\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:16,\u0022name\u0022:\u0022Sleeves Top and Short - Blue \\u0026 Pink\u0022,\u0022price\u0022:\u0022Rs. 478\u0022,\u0022brand\u0022:\u0022Babyhug\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Dress\u0022}},{\u0022id\u0022:18,\u0022name\u0022:\u0022Little Girls Mr. Panda Shirt\u0022,\u0022price\u0022:\u0022Rs. 1200\u0022,\u0022brand\u0022:\u0022Kookie Kids\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:24,\u0022name\u0022:\u0022Colour Blocked Shirt \\u2013 Sky Blue\u0022,\u0022price\u0022:\u0022Rs. 849\u0022,\u0022brand\u0022:\u0022Allen Solly Junior\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Kids\u0022},\u0022category\u0022:\u0022Tops \\u0026 Shirts\u0022}},{\u0022id\u0022:42,\u0022name\u0022:\u0022Lace Top For Women\u0022,\u0022price\u0022:\u0022Rs. 1400\u0022,\u0022brand\u0022:\u0022Mast \\u0026 Harbour\u0022,\u0022category\u0022:{\u0022usertype\u0022:{\u0022usertype\u0022:\u0022Women\u0022},\u0022category\u0022:\u0022Tops\u0022}}]}"
+    }
+  ],
+  "Files": []
+}

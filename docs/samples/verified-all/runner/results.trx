@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="fd2f70ff-6f2b-470d-9441-17b0a1d47428" name="Kasra@DESKTOP-RV5KSGS 2026-09-18 09:46:10" runUser="DESKTOP-RV5KSGS\Kasra" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-18T09:46:10.5391441+03:30" queuing="2026-09-18T09:46:10.5391444+03:30" start="2026-09-18T09:46:07.1935965+03:30" finish="2026-09-18T09:46:51.9061568+03:30" />
+  <TestSettings name="default" id="7b4017b2-a4e9-4460-8fa2-264225d37095">
+    <Deployment runDeploymentRoot="Kasra_DESKTOP-RV5KSGS_2026-09-18_09_46_10" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="17acae42-b501-413e-8c12-c365a4134fd7" testId="b9d360da-080d-6fec-1af7-f66c139d086c" testName="CreatedCustomer_CanAuthenticateAndBeRetrieved" computerName="DESKTOP-RV5KSGS" duration="00:00:03.5712190" startTime="2026-09-18T09:46:07.6306086+03:30" endTime="2026-09-18T09:46:11.2018268+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17acae42-b501-413e-8c12-c365a4134fd7">
+      <Output>
+        <StdOut>Correlation: 674ebeff1a814b3e81c4f0d84f077e0b&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="1999944b-95ba-4a68-ad7c-01b9e779de37" testId="06501f3f-3a11-e083-a023-bfa8bd4a84a8" testName="InvalidLogin_ShowsAnErrorAndDoesNotCreateASession" computerName="DESKTOP-RV5KSGS" duration="00:00:12.8200520" startTime="2026-09-18T09:46:19.2871543+03:30" endTime="2026-09-18T09:46:32.1072051+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1999944b-95ba-4a68-ad7c-01b9e779de37">
+      <Output>
+        <StdOut>Correlation: 89a25d497ad84d5faf8918da2d4f734d&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="bae57787-5bcc-48a6-924f-a6aabf047b73" testId="a54bd027-9303-4b79-aecb-ae1309f08ea2" testName="WrongPassword_IsRejectedForAnExistingCustomer" computerName="DESKTOP-RV5KSGS" duration="00:00:02.7799000" startTime="2026-09-18T09:46:14.5188530+03:30" endTime="2026-09-18T09:46:17.2987514+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bae57787-5bcc-48a6-924f-a6aabf047b73">
+      <Output>
+        <StdOut>Correlation: a23bcc7e627043559c34beae6c0a4c44&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="701887e5-06f4-4a4c-86e8-21f2ca39652e" testId="92439da5-dafd-3ee9-837d-5698c2d8c160" testName="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200,\&quot;products\&quot;:null}&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0139420" startTime="2026-09-18T09:46:43.0543499+03:30" endTime="2026-09-18T09:46:43.0682926+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="701887e5-06f4-4a4c-86e8-21f2ca39652e">
+      <Output>
+        <StdOut>Correlation: 7300d217861d49398ec6eef35852ef2b&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="dcc3ba99-3c57-4da6-86cc-2d2d232191a0" testId="55774a18-6b17-7ac9-96fa-4645f996b8b1" testName="DuplicateEmail_IsRejectedWithoutChangingTheOriginal" computerName="DESKTOP-RV5KSGS" duration="00:00:02.6350990" startTime="2026-09-18T09:46:09.3971512+03:30" endTime="2026-09-18T09:46:12.0322485+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcc3ba99-3c57-4da6-86cc-2d2d232191a0">
+      <Output>
+        <StdOut>Correlation: 87f0d969bf024ce3a683ff89a9c98c70&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="08784474-2078-4731-9f5b-bba35d6e438c" testId="3b51b866-2c9f-ffed-3ea1-ac5ae760a8c4" testName="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200}&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0221540" startTime="2026-09-18T09:46:43.0271480+03:30" endTime="2026-09-18T09:46:43.0493014+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08784474-2078-4731-9f5b-bba35d6e438c">
+      <Output>
+        <StdOut>Correlation: 38711b55645740338b79546a9a353ae4&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="71166b6e-0f75-4fc4-b69f-bf9a3e4f2d61" testId="798eb1ca-cf2a-eca6-b749-03806e4e4464" testName="SearchAndCart_TwoProductsKeepTheirPricesAndRemovalIsSelective" computerName="DESKTOP-RV5KSGS" duration="00:00:10.7548110" startTime="2026-09-18T09:46:32.1072455+03:30" endTime="2026-09-18T09:46:42.8620564+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71166b6e-0f75-4fc4-b69f-bf9a3e4f2d61">
+      <Output>
+        <StdOut>Correlation: 2eafc76d7b9d42619b9b6a4a6ec38668&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="1f6c23e6-94af-4f8a-b5e1-03c63a7ff14b" testId="1f31e8db-067a-438d-770d-a155791b5cea" testName="PriceParser_RejectsAmbiguousInput(&quot;Rs. free&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0174650" startTime="2026-09-18T09:46:42.9960785+03:30" endTime="2026-09-18T09:46:43.0135431+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f6c23e6-94af-4f8a-b5e1-03c63a7ff14b">
+      <Output>
+        <StdOut>Correlation: 49c0228733a041538e5940449c6f95d3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="9e4adfc0-10c1-4b66-85d4-18ace3fbc07b" testId="310ac72e-6717-e653-fb68-585095456d04" testName="UnsupportedMethod_IsRejectedByApplicationContract(&quot;PUT&quot;,&quot;brandsList&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:01.5538620" startTime="2026-09-18T09:46:17.7330642+03:30" endTime="2026-09-18T09:46:19.2869255+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e4adfc0-10c1-4b66-85d4-18ace3fbc07b">
+      <Output>
+        <StdOut>Correlation: 280156ad02ac4be08a356cfaa1feb38e&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="c6f8c7e6-a32a-4dae-8deb-d4fc2b607bc2" testId="2a794628-47c8-2831-17de-20ee6cd03ce3" testName="UnsupportedMethod_IsRejectedByApplicationContract(&quot;POST&quot;,&quot;productsList&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:01.0097320" startTime="2026-09-18T09:46:17.3004743+03:30" endTime="2026-09-18T09:46:18.3102064+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6f8c7e6-a32a-4dae-8deb-d4fc2b607bc2">
+      <Output>
+        <StdOut>Correlation: 8902d28757f94bbcabb38ae665140d71&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="723488e7-e033-416a-9111-f411b9cf6cf8" testId="1971aa69-6f2a-8627-af27-91a951ceb706" testName="AccountAccess_LoginAndLogoutChangeTheSession" computerName="DESKTOP-RV5KSGS" duration="00:00:12.9050920" startTime="2026-09-18T09:46:18.3102646+03:30" endTime="2026-09-18T09:46:31.2153553+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="723488e7-e033-416a-9111-f411b9cf6cf8">
+      <Output>
+        <StdOut>Correlation: a3b06a0508044f93b15952a2ba6b3cb3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="44bb19b5-a7d8-407d-b2af-52b76dd292b5" testId="28482354-2c3b-9a09-3dab-3b2ff38fe006" testName="Authentication_MissingEmail_IsRejected" computerName="DESKTOP-RV5KSGS" duration="00:00:01.7657840" startTime="2026-09-18T09:46:07.6305696+03:30" endTime="2026-09-18T09:46:09.3963055+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44bb19b5-a7d8-407d-b2af-52b76dd292b5">
+      <Output>
+        <StdOut>Correlation: eb445b2f6eff4dcca983240255dfa426&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="72189d80-54cb-45df-9c51-6cc75f5f2ab4" testId="126bea5b-a9a6-4d0b-b3ff-fe19b735ceb0" testName="Search_MissingParameter_HasAnExplicitError" computerName="DESKTOP-RV5KSGS" duration="00:00:01.5035829" startTime="2026-09-18T09:46:14.8997692+03:30" endTime="2026-09-18T09:46:16.4033514+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72189d80-54cb-45df-9c51-6cc75f5f2ab4">
+      <Output>
+        <StdOut>Correlation: 9373e7fd9af843bda59140b89177df95&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="fcbf2b91-89ab-403b-8b2b-1b05fcccd28c" testId="1bb8009b-a07f-a2a7-3b0a-9f2350048e68" testName="PriceParser_RejectsAmbiguousInput(&quot;USD 500&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0159710" startTime="2026-09-18T09:46:42.9800075+03:30" endTime="2026-09-18T09:46:42.9959784+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcbf2b91-89ab-403b-8b2b-1b05fcccd28c">
+      <Output>
+        <StdOut>Correlation: 6aac04d8a2e447c89b51bd52cd2d5db6&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="5b7c8254-1a53-4da1-af0f-a3eb7648ec7b" testId="762db510-8c7a-1e9c-1194-3fad08426f67" testName="Catalogue_HasDistinctUsableProducts" computerName="DESKTOP-RV5KSGS" duration="00:00:01.5044640" startTime="2026-09-18T09:46:13.0143443+03:30" endTime="2026-09-18T09:46:14.5188085+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b7c8254-1a53-4da1-af0f-a3eb7648ec7b">
+      <Output>
+        <StdOut>Correlation: ae76efbc7f044d988e690a2f54ef6f40&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="a68b9943-b854-41a1-8c47-fab9647661ef" testId="b090e0c0-c44f-429c-36b6-af69c6581699" testName="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;&lt;html&gt;blocked&lt;/html&gt;&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0132030" startTime="2026-09-18T09:46:43.0136392+03:30" endTime="2026-09-18T09:46:43.0268417+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a68b9943-b854-41a1-8c47-fab9647661ef">
+      <Output>
+        <StdOut>Correlation: cd21da90361d422ba21eac1677362671&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="c35e7453-ac9f-4d96-b107-da7f3f39c099" testId="0a79b942-9f66-8746-b8a8-f341d9bb01bd" testName="Search_ReturnsOnlyRelevantProducts" computerName="DESKTOP-RV5KSGS" duration="00:00:01.3292550" startTime="2026-09-18T09:46:16.4034154+03:30" endTime="2026-09-18T09:46:17.7326698+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c35e7453-ac9f-4d96-b107-da7f3f39c099">
+      <Output>
+        <StdOut>Correlation: 35443ea4f86a49ce84bf205999a13c17&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="6dee9263-b21e-45bb-801a-29b6bdda9337" testId="3bc9e5d7-ae10-ab8f-412d-0be574c3e460" testName="Purchase_ApiCustomerSeesCorrectCheckoutAndConfirmedOrder" computerName="DESKTOP-RV5KSGS" duration="00:00:20.6336060" startTime="2026-09-18T09:46:31.2175830+03:30" endTime="2026-09-18T09:46:51.8511885+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dee9263-b21e-45bb-801a-29b6bdda9337">
+      <Output>
+        <StdOut>Correlation: 96d2ce00f9f045c2b609de8af3fc16c6&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="df0da0c9-bc7d-4092-ba36-67c41b23a3f7" testId="6948cd17-fd64-81a9-2278-0da7d91a5ee7" testName="ProductContract_RejectsStringResponseCode" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0235290" startTime="2026-09-18T09:46:43.0686503+03:30" endTime="2026-09-18T09:46:43.0921788+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df0da0c9-bc7d-4092-ba36-67c41b23a3f7">
+      <Output>
+        <StdOut>Correlation: 1f0b864eacb54c01a1a23516f3c15d4c&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="a54bc201-6d80-4ed9-b0ba-94ce4d280b7e" testId="ddeed9fd-8448-9b0a-97c7-bbb2b2c748aa" testName="PriceParser_PreservesNumericValue(&quot;Rs. 500&quot;,500)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0169510" startTime="2026-09-18T09:46:42.9272260+03:30" endTime="2026-09-18T09:46:42.9441765+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a54bc201-6d80-4ed9-b0ba-94ce4d280b7e">
+      <Output>
+        <StdOut>Correlation: 9bbb80d498384b7d81d24df53d112040&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="155b7aa4-08d7-4c09-b2c8-ef15cb510266" testId="3bc6785a-d9f2-fe6d-6b43-d089f1966b3d" testName="PriceParser_PreservesNumericValue(&quot;Rs. 1,250.50&quot;,1250.5d)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0157510" startTime="2026-09-18T09:46:42.9455555+03:30" endTime="2026-09-18T09:46:42.9613059+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="155b7aa4-08d7-4c09-b2c8-ef15cb510266">
+      <Output>
+        <StdOut>Correlation: 5e411f0da0764e82bfef6df7b2f0e4a3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd99662f-8620-49a4-9115-6211048b078f" testId="23d3d8ff-cf21-31de-8f68-b16b8bca8cea" testName="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;An unrelated assertion failed&quot;,&quot;Business assertion mismatch; product / test triage required&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0190889" startTime="2026-09-18T09:46:42.9062809+03:30" endTime="2026-09-18T09:46:42.9253694+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd99662f-8620-49a4-9115-6211048b078f">
+      <Output>
+        <StdOut>Correlation: ccb314640b4e4ee1a0ad2fc1e54074d2&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="cfc0b3b0-c8bb-43a5-861d-dcc5fd123073" testId="35c56665-e2c9-aaa4-94ce-92d0827842c9" testName="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;arrange&quot;,&quot;Executable doesn't exist&quot;,&quot;Setup failure; scenario not exercised&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0233640" startTime="2026-09-18T09:46:42.8628746+03:30" endTime="2026-09-18T09:46:42.8862375+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfc0b3b0-c8bb-43a5-861d-dcc5fd123073">
+      <Output>
+        <StdOut>Correlation: e745aeed72704c95b9a588956b21edbf&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd2c7ed1-8259-4303-8437-f5c5b8ccb429" testId="7149438f-7989-5180-0600-2dd161590d38" testName="PriceParser_RejectsAmbiguousInput(&quot;Rs. 0.50.20&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0175970" startTime="2026-09-18T09:46:42.9616169+03:30" endTime="2026-09-18T09:46:42.9792134+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd2c7ed1-8259-4303-8437-f5c5b8ccb429">
+      <Output>
+        <StdOut>Correlation: 1be0ec700f014eed9b8c64941da57980&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="8995aeba-a2b6-42e2-93f4-3e44b2593d31" testId="92ff6d00-c5af-79a5-b9ad-f2544954d21e" testName="Redaction_CoversNestedFieldsAndRegisteredSecrets" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0208420" startTime="2026-09-18T09:46:43.0929243+03:30" endTime="2026-09-18T09:46:43.1137660+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8995aeba-a2b6-42e2-93f4-3e44b2593d31">
+      <Output>
+        <StdOut>Correlation: be70308c423a42e4990842db8db70621&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="d3024d6d-4a12-4abc-80cc-c1b94c1f7ac4" testId="3bf0d718-1a24-8a8e-2f3a-9b7096b2e47e" testName="Lifecycle_UpdatePersistsAndDeletionRevokesAccess" computerName="DESKTOP-RV5KSGS" duration="00:00:03.6974560" startTime="2026-09-18T09:46:11.2019493+03:30" endTime="2026-09-18T09:46:14.8994057+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3024d6d-4a12-4abc-80cc-c1b94c1f7ac4">
+      <Output>
+        <StdOut>Correlation: 790aaf49f75f4484a237630f0419a57a&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="de4e70a7-399b-492a-8d19-b47d00b4edf3" testId="0ba622fe-63a8-79f3-057f-4fd23386f942" testName="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;EXPECTED DEMO FAILURE: assertion mismatch&quot;,&quot;Intentional diagnostics demonstration&quot;)" computerName="DESKTOP-RV5KSGS" duration="00:00:00.0158580" startTime="2026-09-18T09:46:42.8895693+03:30" endTime="2026-09-18T09:46:42.9054277+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de4e70a7-399b-492a-8d19-b47d00b4edf3">
+      <Output>
+        <StdOut>Correlation: bb1fde7289da4ddeb2e6fe9b255aa0f4&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="affa5e17-00d1-42c5-a63a-bff1e6b7189d" testId="8560c269-7101-c1c7-61a8-648287b1a017" testName="UnknownCustomer_CannotAuthenticate" computerName="DESKTOP-RV5KSGS" duration="00:00:00.9819330" startTime="2026-09-18T09:46:12.0323614+03:30" endTime="2026-09-18T09:46:13.0142938+03:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="affa5e17-00d1-42c5-a63a-bff1e6b7189d">
+      <Output>
+        <StdOut>Correlation: 2aa9c3b54c0548c1af0e2adad6f0caa5&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="DESKTOP-RV5KSGS\details.html" />
+        <ResultFile path="DESKTOP-RV5KSGS\diagnostics.json" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Search_ReturnsOnlyRelevantProducts" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="0a79b942-9f66-8746-b8a8-f341d9bb01bd">
+      <Execution id="c35e7453-ac9f-4d96-b107-da7f3f39c099" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.CatalogueTests" name="Search_ReturnsOnlyRelevantProducts" />
+    </UnitTest>
+    <UnitTest name="PriceParser_RejectsAmbiguousInput(&quot;USD 500&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="1bb8009b-a07f-a2a7-3b0a-9f2350048e68">
+      <Execution id="fcbf2b91-89ab-403b-8b2b-1b05fcccd28c" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="PriceParser_RejectsAmbiguousInput(&quot;USD 500&quot;)" />
+    </UnitTest>
+    <UnitTest name="Purchase_ApiCustomerSeesCorrectCheckoutAndConfirmedOrder" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="3bc9e5d7-ae10-ab8f-412d-0be574c3e460">
+      <Execution id="6dee9263-b21e-45bb-801a-29b6bdda9337" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Ui.Journeys" name="Purchase_ApiCustomerSeesCorrectCheckoutAndConfirmedOrder" />
+    </UnitTest>
+    <UnitTest name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200,\&quot;products\&quot;:null}&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="92439da5-dafd-3ee9-837d-5698c2d8c160">
+      <Execution id="701887e5-06f4-4a4c-86e8-21f2ca39652e" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200,\&quot;products\&quot;:null}&quot;)" />
+    </UnitTest>
+    <UnitTest name="PriceParser_PreservesNumericValue(&quot;Rs. 1,250.50&quot;,1250.5d)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="3bc6785a-d9f2-fe6d-6b43-d089f1966b3d">
+      <Execution id="155b7aa4-08d7-4c09-b2c8-ef15cb510266" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="PriceParser_PreservesNumericValue(&quot;Rs. 1,250.50&quot;,1250.5d)" />
+    </UnitTest>
+    <UnitTest name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200}&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="3b51b866-2c9f-ffed-3ea1-ac5ae760a8c4">
+      <Execution id="08784474-2078-4731-9f5b-bba35d6e438c" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;{\&quot;responseCode\&quot;:200}&quot;)" />
+    </UnitTest>
+    <UnitTest name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;EXPECTED DEMO FAILURE: assertion mismatch&quot;,&quot;Intentional diagnostics demonstration&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="0ba622fe-63a8-79f3-057f-4fd23386f942">
+      <Execution id="de4e70a7-399b-492a-8d19-b47d00b4edf3" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;EXPECTED DEMO FAILURE: assertion mismatch&quot;,&quot;Intentional diagnostics demonstration&quot;)" />
+    </UnitTest>
+    <UnitTest name="AccountAccess_LoginAndLogoutChangeTheSession" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="1971aa69-6f2a-8627-af27-91a951ceb706">
+      <Execution id="723488e7-e033-416a-9111-f411b9cf6cf8" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Ui.Journeys" name="AccountAccess_LoginAndLogoutChangeTheSession" />
+    </UnitTest>
+    <UnitTest name="Redaction_CoversNestedFieldsAndRegisteredSecrets" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="92ff6d00-c5af-79a5-b9ad-f2544954d21e">
+      <Execution id="8995aeba-a2b6-42e2-93f4-3e44b2593d31" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="Redaction_CoversNestedFieldsAndRegisteredSecrets" />
+    </UnitTest>
+    <UnitTest name="CreatedCustomer_CanAuthenticateAndBeRetrieved" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="b9d360da-080d-6fec-1af7-f66c139d086c">
+      <Execution id="17acae42-b501-413e-8c12-c365a4134fd7" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="CreatedCustomer_CanAuthenticateAndBeRetrieved" />
+    </UnitTest>
+    <UnitTest name="UnsupportedMethod_IsRejectedByApplicationContract(&quot;PUT&quot;,&quot;brandsList&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="310ac72e-6717-e653-fb68-585095456d04">
+      <Execution id="9e4adfc0-10c1-4b66-85d4-18ace3fbc07b" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.CatalogueTests" name="UnsupportedMethod_IsRejectedByApplicationContract(&quot;PUT&quot;,&quot;brandsList&quot;)" />
+    </UnitTest>
+    <UnitTest name="WrongPassword_IsRejectedForAnExistingCustomer" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="a54bd027-9303-4b79-aecb-ae1309f08ea2">
+      <Execution id="bae57787-5bcc-48a6-924f-a6aabf047b73" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="WrongPassword_IsRejectedForAnExistingCustomer" />
+    </UnitTest>
+    <UnitTest name="DuplicateEmail_IsRejectedWithoutChangingTheOriginal" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="55774a18-6b17-7ac9-96fa-4645f996b8b1">
+      <Execution id="dcc3ba99-3c57-4da6-86cc-2d2d232191a0" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="DuplicateEmail_IsRejectedWithoutChangingTheOriginal" />
+    </UnitTest>
+    <UnitTest name="UnknownCustomer_CannotAuthenticate" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="8560c269-7101-c1c7-61a8-648287b1a017">
+      <Execution id="affa5e17-00d1-42c5-a63a-bff1e6b7189d" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="UnknownCustomer_CannotAuthenticate" />
+    </UnitTest>
+    <UnitTest name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;arrange&quot;,&quot;Executable doesn't exist&quot;,&quot;Setup failure; scenario not exercised&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="35c56665-e2c9-aaa4-94ce-92d0827842c9">
+      <Execution id="cfc0b3b0-c8bb-43a5-861d-dcc5fd123073" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;arrange&quot;,&quot;Executable doesn't exist&quot;,&quot;Setup failure; scenario not exercised&quot;)" />
+    </UnitTest>
+    <UnitTest name="PriceParser_PreservesNumericValue(&quot;Rs. 500&quot;,500)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="ddeed9fd-8448-9b0a-97c7-bbb2b2c748aa">
+      <Execution id="a54bc201-6d80-4ed9-b0ba-94ce4d280b7e" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="PriceParser_PreservesNumericValue(&quot;Rs. 500&quot;,500)" />
+    </UnitTest>
+    <UnitTest name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;&lt;html&gt;blocked&lt;/html&gt;&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="b090e0c0-c44f-429c-36b6-af69c6581699">
+      <Execution id="a68b9943-b854-41a1-8c47-fab9647661ef" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="ProductContract_CannotPassOnHtmlOrMissingCollection(&quot;&lt;html&gt;blocked&lt;/html&gt;&quot;)" />
+    </UnitTest>
+    <UnitTest name="PriceParser_RejectsAmbiguousInput(&quot;Rs. 0.50.20&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="7149438f-7989-5180-0600-2dd161590d38">
+      <Execution id="dd2c7ed1-8259-4303-8437-f5c5b8ccb429" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="PriceParser_RejectsAmbiguousInput(&quot;Rs. 0.50.20&quot;)" />
+    </UnitTest>
+    <UnitTest name="SearchAndCart_TwoProductsKeepTheirPricesAndRemovalIsSelective" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="798eb1ca-cf2a-eca6-b749-03806e4e4464">
+      <Execution id="71166b6e-0f75-4fc4-b69f-bf9a3e4f2d61" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Ui.Journeys" name="SearchAndCart_TwoProductsKeepTheirPricesAndRemovalIsSelective" />
+    </UnitTest>
+    <UnitTest name="Search_MissingParameter_HasAnExplicitError" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="126bea5b-a9a6-4d0b-b3ff-fe19b735ceb0">
+      <Execution id="72189d80-54cb-45df-9c51-6cc75f5f2ab4" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.CatalogueTests" name="Search_MissingParameter_HasAnExplicitError" />
+    </UnitTest>
+    <UnitTest name="UnsupportedMethod_IsRejectedByApplicationContract(&quot;POST&quot;,&quot;productsList&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="2a794628-47c8-2831-17de-20ee6cd03ce3">
+      <Execution id="c6f8c7e6-a32a-4dae-8deb-d4fc2b607bc2" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.CatalogueTests" name="UnsupportedMethod_IsRejectedByApplicationContract(&quot;POST&quot;,&quot;productsList&quot;)" />
+    </UnitTest>
+    <UnitTest name="Authentication_MissingEmail_IsRejected" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="28482354-2c3b-9a09-3dab-3b2ff38fe006">
+      <Execution id="44bb19b5-a7d8-407d-b2af-52b76dd292b5" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="Authentication_MissingEmail_IsRejected" />
+    </UnitTest>
+    <UnitTest name="PriceParser_RejectsAmbiguousInput(&quot;Rs. free&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="1f31e8db-067a-438d-770d-a155791b5cea">
+      <Execution id="1f6c23e6-94af-4f8a-b5e1-03c63a7ff14b" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="PriceParser_RejectsAmbiguousInput(&quot;Rs. free&quot;)" />
+    </UnitTest>
+    <UnitTest name="Lifecycle_UpdatePersistsAndDeletionRevokesAccess" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="3bf0d718-1a24-8a8e-2f3a-9b7096b2e47e">
+      <Execution id="d3024d6d-4a12-4abc-80cc-c1b94c1f7ac4" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.AccountTests" name="Lifecycle_UpdatePersistsAndDeletionRevokesAccess" />
+    </UnitTest>
+    <UnitTest name="InvalidLogin_ShowsAnErrorAndDoesNotCreateASession" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="06501f3f-3a11-e083-a023-bfa8bd4a84a8">
+      <Execution id="1999944b-95ba-4a68-ad7c-01b9e779de37" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Ui.Journeys" name="InvalidLogin_ShowsAnErrorAndDoesNotCreateASession" />
+    </UnitTest>
+    <UnitTest name="Catalogue_HasDistinctUsableProducts" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="762db510-8c7a-1e9c-1194-3fad08426f67">
+      <Execution id="5b7c8254-1a53-4da1-af0f-a3eb7648ec7b" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Api.CatalogueTests" name="Catalogue_HasDistinctUsableProducts" />
+    </UnitTest>
+    <UnitTest name="ProductContract_RejectsStringResponseCode" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="6948cd17-fd64-81a9-2278-0da7d91a5ee7">
+      <Execution id="df0da0c9-bc7d-4092-ba36-67c41b23a3f7" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="ProductContract_RejectsStringResponseCode" />
+    </UnitTest>
+    <UnitTest name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;An unrelated assertion failed&quot;,&quot;Business assertion mismatch; product / test triage required&quot;)" storage="c:\users\kasra\documents\codex\2026-09-18\fv\outputs\ae-qa-suite\tests\challenge.tests\bin\release\net8.0\challenge.tests.dll" id="23d3d8ff-cf21-31de-8f68-b16b8bca8cea">
+      <Execution id="fd99662f-8620-49a4-9115-6211048b078f" />
+      <TestMethod codeBase="C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Challenge.Tests.Harness.SupportTests" name="DemoClassification_DoesNotHideSetupOrUnrelatedFailures(&quot;act/assert&quot;,&quot;An unrelated assertion failed&quot;,&quot;Business assertion mismatch; product / test triage required&quot;)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b9d360da-080d-6fec-1af7-f66c139d086c" executionId="17acae42-b501-413e-8c12-c365a4134fd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06501f3f-3a11-e083-a023-bfa8bd4a84a8" executionId="1999944b-95ba-4a68-ad7c-01b9e779de37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a54bd027-9303-4b79-aecb-ae1309f08ea2" executionId="bae57787-5bcc-48a6-924f-a6aabf047b73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92439da5-dafd-3ee9-837d-5698c2d8c160" executionId="701887e5-06f4-4a4c-86e8-21f2ca39652e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55774a18-6b17-7ac9-96fa-4645f996b8b1" executionId="dcc3ba99-3c57-4da6-86cc-2d2d232191a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b51b866-2c9f-ffed-3ea1-ac5ae760a8c4" executionId="08784474-2078-4731-9f5b-bba35d6e438c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="798eb1ca-cf2a-eca6-b749-03806e4e4464" executionId="71166b6e-0f75-4fc4-b69f-bf9a3e4f2d61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f31e8db-067a-438d-770d-a155791b5cea" executionId="1f6c23e6-94af-4f8a-b5e1-03c63a7ff14b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="310ac72e-6717-e653-fb68-585095456d04" executionId="9e4adfc0-10c1-4b66-85d4-18ace3fbc07b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a794628-47c8-2831-17de-20ee6cd03ce3" executionId="c6f8c7e6-a32a-4dae-8deb-d4fc2b607bc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1971aa69-6f2a-8627-af27-91a951ceb706" executionId="723488e7-e033-416a-9111-f411b9cf6cf8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28482354-2c3b-9a09-3dab-3b2ff38fe006" executionId="44bb19b5-a7d8-407d-b2af-52b76dd292b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="126bea5b-a9a6-4d0b-b3ff-fe19b735ceb0" executionId="72189d80-54cb-45df-9c51-6cc75f5f2ab4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bb8009b-a07f-a2a7-3b0a-9f2350048e68" executionId="fcbf2b91-89ab-403b-8b2b-1b05fcccd28c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="762db510-8c7a-1e9c-1194-3fad08426f67" executionId="5b7c8254-1a53-4da1-af0f-a3eb7648ec7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b090e0c0-c44f-429c-36b6-af69c6581699" executionId="a68b9943-b854-41a1-8c47-fab9647661ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a79b942-9f66-8746-b8a8-f341d9bb01bd" executionId="c35e7453-ac9f-4d96-b107-da7f3f39c099" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bc9e5d7-ae10-ab8f-412d-0be574c3e460" executionId="6dee9263-b21e-45bb-801a-29b6bdda9337" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6948cd17-fd64-81a9-2278-0da7d91a5ee7" executionId="df0da0c9-bc7d-4092-ba36-67c41b23a3f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ddeed9fd-8448-9b0a-97c7-bbb2b2c748aa" executionId="a54bc201-6d80-4ed9-b0ba-94ce4d280b7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bc6785a-d9f2-fe6d-6b43-d089f1966b3d" executionId="155b7aa4-08d7-4c09-b2c8-ef15cb510266" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23d3d8ff-cf21-31de-8f68-b16b8bca8cea" executionId="fd99662f-8620-49a4-9115-6211048b078f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35c56665-e2c9-aaa4-94ce-92d0827842c9" executionId="cfc0b3b0-c8bb-43a5-861d-dcc5fd123073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7149438f-7989-5180-0600-2dd161590d38" executionId="dd2c7ed1-8259-4303-8437-f5c5b8ccb429" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92ff6d00-c5af-79a5-b9ad-f2544954d21e" executionId="8995aeba-a2b6-42e2-93f4-3e44b2593d31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bf0d718-1a24-8a8e-2f3a-9b7096b2e47e" executionId="d3024d6d-4a12-4abc-80cc-c1b94c1f7ac4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ba622fe-63a8-79f3-057f-4fd23386f942" executionId="de4e70a7-399b-492a-8d19-b47d00b4edf3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8560c269-7101-c1c7-61a8-648287b1a017" executionId="affa5e17-00d1-42c5-a63a-bff1e6b7189d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="28" executed="28" passed="28" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\tests\Challenge.Tests\bin\Release\net8.0\Challenge.Tests.dll&#xD;
+   NUnit3TestExecutor discovered 28 of 28 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Correlation: eb445b2f6eff4dcca983240255dfa426&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 674ebeff1a814b3e81c4f0d84f077e0b&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 87f0d969bf024ce3a683ff89a9c98c70&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 2aa9c3b54c0548c1af0e2adad6f0caa5&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: ae76efbc7f044d988e690a2f54ef6f40&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 790aaf49f75f4484a237630f0419a57a&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 9373e7fd9af843bda59140b89177df95&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: a23bcc7e627043559c34beae6c0a4c44&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 35443ea4f86a49ce84bf205999a13c17&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 8902d28757f94bbcabb38ae665140d71&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 280156ad02ac4be08a356cfaa1feb38e&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: a3b06a0508044f93b15952a2ba6b3cb3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 89a25d497ad84d5faf8918da2d4f734d&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+Correlation: 2eafc76d7b9d42619b9b6a4a6ec38668&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: e745aeed72704c95b9a588956b21edbf&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: bb1fde7289da4ddeb2e6fe9b255aa0f4&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: ccb314640b4e4ee1a0ad2fc1e54074d2&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 9bbb80d498384b7d81d24df53d112040&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 5e411f0da0764e82bfef6df7b2f0e4a3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 1be0ec700f014eed9b8c64941da57980&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 6aac04d8a2e447c89b51bd52cd2d5db6&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 49c0228733a041538e5940449c6f95d3&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: cd21da90361d422ba21eac1677362671&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 38711b55645740338b79546a9a353ae4&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 7300d217861d49398ec6eef35852ef2b&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 1f0b864eacb54c01a1a23516f3c15d4c&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: be70308c423a42e4990842db8db70621&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Not required (no accounts created)&#xD;
+&#xD;
+Correlation: 96d2ce00f9f045c2b609de8af3fc16c6&#xD;
+Report: C:\Users\Kasra\Documents\Codex\2026-09-18\fv\outputs\ae-qa-suite\artifacts\20260918-094606-all-bdbb72\evidence\index.html&#xD;
+Cleanup: Deleted / confirmed absent&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

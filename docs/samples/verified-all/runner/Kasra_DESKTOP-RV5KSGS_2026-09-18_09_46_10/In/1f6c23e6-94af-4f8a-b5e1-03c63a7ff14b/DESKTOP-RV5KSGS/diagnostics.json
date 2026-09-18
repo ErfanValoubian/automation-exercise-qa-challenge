@@ -1,0 +1,32 @@
+{
+  "Name": "Challenge.Tests.Harness.SupportTests.PriceParser_RejectsAmbiguousInput(\u0022Rs. free\u0022)",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "49c0228733a041538e5940449c6f95d3",
+  "DurationMs": 1,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.SupportTests.PriceParser_RejectsAmbiguousInput(\u0022Rs. free\u0022); worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

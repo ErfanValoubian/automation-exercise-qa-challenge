@@ -1,0 +1,50 @@
+{
+  "Name": "Challenge.Tests.Harness.ConsentDialogTests.DialogAppearingBetweenActions_IsHandledBeforeCheckoutClick",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "9773f4c337784e498dc41a9671a8207e",
+  "DurationMs": 2730,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "browser-harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 1,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.ConsentDialogTests.DialogAppearingBetweenActions_IsHandledBeforeCheckoutClick; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1494,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1568,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1657,
+      "Kind": "privacy",
+      "Message": "Consent dialog appeared; opening existing privacy choices.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2148,
+      "Kind": "privacy",
+      "Message": "Confirmed existing privacy choices through the visible dialog.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

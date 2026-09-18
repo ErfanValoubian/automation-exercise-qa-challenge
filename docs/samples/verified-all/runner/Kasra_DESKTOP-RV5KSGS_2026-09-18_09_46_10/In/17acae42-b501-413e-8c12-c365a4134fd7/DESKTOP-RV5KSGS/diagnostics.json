@@ -1,0 +1,117 @@
+{
+  "Name": "Challenge.Tests.Api.AccountTests.CreatedCustomer_CanAuthenticateAndBeRetrieved",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "674ebeff1a814b3e81c4f0d84f077e0b",
+  "DurationMs": 3547,
+  "Cleanup": "Deleted / confirmed absent",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "smoke"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 1,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.AccountTests.CreatedCustomer_CanAuthenticateAndBeRetrieved; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 10,
+      "Kind": "request",
+      "Message": "POST createAccount",
+      "Detail": "{\u0022name\u0022:\u0022QA 746362b8b2\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_date\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022firstname\u0022:\u0022QA 746362b8b2\u0022,\u0022lastname\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022mobile_number\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1714,
+      "Kind": "response",
+      "Message": "HTTP 200; application 201; 1703 ms",
+      "Detail": "{\u0022responseCode\u0022:201,\u0022message\u0022:\u0022User created!\u0022}"
+    },
+    {
+      "ElapsedMs": 1714,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 201.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1715,
+      "Kind": "arrange",
+      "Message": "Created an isolated synthetic customer.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1715,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1716,
+      "Kind": "request",
+      "Message": "POST verifyLogin",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 2050,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 334 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022User exists!\u0022}"
+    },
+    {
+      "ElapsedMs": 2050,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2388,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 337 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022user\u0022:{\u0022id\u0022:2841345,\u0022name\u0022:\u0022QA 746362b8b2\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_day\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022first_name\u0022:\u0022QA 746362b8b2\u0022,\u0022last_name\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022}}"
+    },
+    {
+      "ElapsedMs": 2392,
+      "Kind": "request",
+      "Message": "DELETE deleteAccount",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 3192,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 800 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022Account deleted!\u0022}"
+    },
+    {
+      "ElapsedMs": 3194,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3527,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 333 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022Account not found with this email, try another email!\u0022}"
+    },
+    {
+      "ElapsedMs": 3527,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 3527,
+      "Kind": "cleanup",
+      "Message": "Deleted / confirmed absent",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

@@ -1,0 +1,38 @@
+{
+  "Name": "Challenge.Tests.Harness.ConsentDialogTests.NoOverlay_DoesNotClickAnUnrelatedConsentButton",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "4154a990dd8e4c53a014af6fb0f7bbae",
+  "DurationMs": 1385,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "browser-harness"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Harness.ConsentDialogTests.NoOverlay_DoesNotClickAnUnrelatedConsentButton; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1024,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1083,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

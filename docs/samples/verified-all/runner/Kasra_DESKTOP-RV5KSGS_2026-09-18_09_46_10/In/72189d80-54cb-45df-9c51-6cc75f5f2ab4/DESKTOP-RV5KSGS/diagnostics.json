@@ -1,0 +1,51 @@
+{
+  "Name": "Challenge.Tests.Api.CatalogueTests.Search_MissingParameter_HasAnExplicitError",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "9373e7fd9af843bda59140b89177df95",
+  "DurationMs": 1499,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.CatalogueTests.Search_MissingParameter_HasAnExplicitError; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1,
+      "Kind": "request",
+      "Message": "POST searchProduct",
+      "Detail": "{}"
+    },
+    {
+      "ElapsedMs": 1483,
+      "Kind": "response",
+      "Message": "HTTP 200; application 400; 1482 ms",
+      "Detail": "{\u0022responseCode\u0022:400,\u0022message\u0022:\u0022Bad request, search_product parameter is missing in POST request.\u0022}"
+    },
+    {
+      "ElapsedMs": 1483,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 400.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

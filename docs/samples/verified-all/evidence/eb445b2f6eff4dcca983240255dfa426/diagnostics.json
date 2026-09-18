@@ -1,0 +1,51 @@
+{
+  "Name": "Challenge.Tests.Api.AccountTests.Authentication_MissingEmail_IsRejected",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "N/A (no browser)",
+  "Worker": "ParallelWorker#1",
+  "CorrelationId": "eb445b2f6eff4dcca983240255dfa426",
+  "DurationMs": 1736,
+  "Cleanup": "Not required (no accounts created)",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "api",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 1,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Api.AccountTests.Authentication_MissingEmail_IsRejected; worker=ParallelWorker#1",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 10,
+      "Kind": "request",
+      "Message": "POST verifyLogin",
+      "Detail": "{\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1714,
+      "Kind": "response",
+      "Message": "HTTP 200; application 400; 1704 ms",
+      "Detail": "{\u0022responseCode\u0022:400,\u0022message\u0022:\u0022Bad request, email or password parameter is missing in POST request.\u0022}"
+    },
+    {
+      "ElapsedMs": 1714,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 400.",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}

@@ -1,0 +1,147 @@
+{
+  "Name": "Challenge.Tests.Ui.Journeys.InvalidLogin_ShowsAnErrorAndDoesNotCreateASession",
+  "Outcome": "Passed",
+  "Classification": "Passed",
+  "Environment": "public-practice",
+  "Target": "https://automationexercise.com",
+  "Browser": "chromium/msedge",
+  "Worker": "ParallelWorker#2",
+  "CorrelationId": "89a25d497ad84d5faf8918da2d4f734d",
+  "DurationMs": 12811,
+  "Cleanup": "Deleted / confirmed absent",
+  "Failure": "\n",
+  "Retry": "Not retried",
+  "Categories": [
+    "ui",
+    "regression"
+  ],
+  "Events": [
+    {
+      "ElapsedMs": 0,
+      "Kind": "test",
+      "Message": "Challenge.Tests.Ui.Journeys.InvalidLogin_ShowsAnErrorAndDoesNotCreateASession; worker=ParallelWorker#2",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 0,
+      "Kind": "request",
+      "Message": "POST createAccount",
+      "Detail": "{\u0022name\u0022:\u0022QA ca26cf2db0\u0022,\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022,\u0022title\u0022:\u0022Mr\u0022,\u0022birth_date\u0022:\u002215\u0022,\u0022birth_month\u0022:\u00226\u0022,\u0022birth_year\u0022:\u00221990\u0022,\u0022firstname\u0022:\u0022QA ca26cf2db0\u0022,\u0022lastname\u0022:\u0022Automation\u0022,\u0022company\u0022:\u0022QA Practice\u0022,\u0022address1\u0022:\u0022[REDACTED]\u0022,\u0022address2\u0022:\u0022[REDACTED]\u0022,\u0022country\u0022:\u0022Canada\u0022,\u0022zipcode\u0022:\u0022A1A1A1\u0022,\u0022state\u0022:\u0022Test Province\u0022,\u0022city\u0022:\u0022Test City\u0022,\u0022mobile_number\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 1278,
+      "Kind": "response",
+      "Message": "HTTP 200; application 201; 1277 ms",
+      "Detail": "{\u0022responseCode\u0022:201,\u0022message\u0022:\u0022User created!\u0022}"
+    },
+    {
+      "ElapsedMs": 1278,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 201.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 1278,
+      "Kind": "arrange",
+      "Message": "Created an isolated synthetic customer.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2375,
+      "Kind": "browser",
+      "Message": "Isolated chromium context started.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 2375,
+      "Kind": "phase",
+      "Message": "act/assert",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4824,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4824,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 4824,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9639,
+      "Kind": "privacy",
+      "Message": "Consent dialog appeared; opening existing privacy choices.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 9989,
+      "Kind": "privacy",
+      "Message": "Confirmed existing privacy choices through the visible dialog.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11180,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11181,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Open\u002BSans:400,800,300,600,700\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11181,
+      "Kind": "browser-console",
+      "Message": "Mixed Content: The page at \u0027https://automationexercise.com/login\u0027 was loaded over HTTPS, but requested an insecure stylesheet \u0027http://fonts.googleapis.com/css?family=Abel\u0027. This request has been blocked; the content must be served over HTTPS.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 11297,
+      "Kind": "request",
+      "Message": "DELETE deleteAccount",
+      "Detail": "{\u0022email\u0022:\u0022[REDACTED]\u0022,\u0022password\u0022:\u0022[REDACTED]\u0022}"
+    },
+    {
+      "ElapsedMs": 12176,
+      "Kind": "response",
+      "Message": "HTTP 200; application 200; 878 ms",
+      "Detail": "{\u0022responseCode\u0022:200,\u0022message\u0022:\u0022Account deleted!\u0022}"
+    },
+    {
+      "ElapsedMs": 12176,
+      "Kind": "request",
+      "Message": "GET getUserDetailByEmail?email=[REDACTED]",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12501,
+      "Kind": "response",
+      "Message": "HTTP 200; application 404; 325 ms",
+      "Detail": "{\u0022responseCode\u0022:404,\u0022message\u0022:\u0022Account not found with this email, try another email!\u0022}"
+    },
+    {
+      "ElapsedMs": 12501,
+      "Kind": "contract-observation",
+      "Message": "HTTP 200 differs from application responseCode 404.",
+      "Detail": null
+    },
+    {
+      "ElapsedMs": 12501,
+      "Kind": "cleanup",
+      "Message": "Deleted / confirmed absent",
+      "Detail": null
+    }
+  ],
+  "Files": []
+}
